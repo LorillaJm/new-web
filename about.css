@@ -1,0 +1,205 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.navbar {
+    background-color: #333; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensures the navbar is on top of other content */
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo and menu links as needed */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu-links li {
+    margin: 0 10px;
+}
+
+/* Add more styles for the close-menu-btn and hamburger-btn if needed */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #C06B3E;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-links li {
+    margin: 0 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    background-color: rgb(32, 30, 30);
+}
+
+.footer-section h2 {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-section h2::after {
+    content: '';
+    width: 4rem;
+    height: .2rem;
+    background: #e65b00;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-section p {
+    transition: all .2s linear;
+    margin-bottom: .6em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-section p:hover {
+    transition: all .2s linear;
+    transform: translateX(4px);
+}
+
+.footer-section a:hover {
+    color: #f46d13;
+}
+
+.footer-item {
+    margin: 1rem;
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer-item li {
+    margin-right: 1rem;
+}
+
+.social ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.social ul li:hover {
+    color: #e65b00;
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+@media screen and (max-width: 320px) {
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+}

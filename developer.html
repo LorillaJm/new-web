@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Profile Card Hover</title>
+      <link rel="stylesheet" href="developer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+    <li><a href="newappweb.html">Back to Home</a></li>
+      <div class="container">
+         <div class="wrapper">
+            <a href="#">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/528/728/small/ai-generated-generative-artificial-intelligence-hacker-with-hoodie-red-and-blue-neon-light-png.png" alt="">
+            </a>
+            <div class="title">
+               John Michael Lorilla
+            </div>
+            <div class="place">
+               Iloilo, Philippines
+            </div>
+         </div>
+         <div class="content">
+            <p>
+               User Interface Designer and <br>front-end developer
+            </p>
+            <div class="buttons">
+               <div class="btn">
+               <a href="https://www.facebook.com/"> <button>Message</button>
+            </a>
+               </div>
+               <div class="btn">
+                  <button>Following</button>
+               </div>
+            </div>
+         </div>
+         <div class="icons">
+            <li><a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+         </div>
+      </div>
+      <script>
+         const img = document.querySelector("img");
+         const icons = document.querySelector(".icons");
+         img.onclick = function(){
+           this.classList.toggle("active");
+           icons.classList.toggle("active");
+         }
+      </script>
+   </body>
+</html>
